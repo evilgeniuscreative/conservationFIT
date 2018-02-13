@@ -1,0 +1,39 @@
+/* Nirvana Custom CSS */
+
+#content .wp-caption-text {
+    font-size: 13px;
+    line-height: 1.2em;
+}
+
+#content .paragraph-list {
+    margin-bottom: 0.2em;
+}
+
+#gallery li {
+    float: left;
+    width: 300px;
+    margin: 0px;
+}
+
+#gallery li img {
+    float: left;
+    padding-top: 10px;
+}
+
+#gallery li p {
+    float: right;
+    width: 200px;
+    padding: 20px 20px 10px 0px;
+}
+
+.textwidget img {
+    padding-right: 10px;
+}
+
+.nivo-caption h2 {
+    text-transform: none;
+}
+
+.nivo-caption a {
+    font-weight: 400;
+}

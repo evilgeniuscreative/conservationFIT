@@ -1,0 +1,57 @@
+.fitlogo, .wtlogo {
+  display: inline-block;
+  img{
+    height:100%;
+    width:auto;
+  }
+}
+
+.wtlogo {
+  float: right;
+}
+
+@media screen and (min-width: 769px) {
+  .fitlogo, .wtlogo {
+    height: 100px;
+  }
+  #branding{
+    min-height:100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fitlogo, .wtlogo {
+    height: 70px;
+  }
+  #branding{
+    min-height:unset!important;
+    height:70px!important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .fitlogo, .wtlogo {
+    height: 60px;
+  }
+  #branding{
+    min-height:unset!important;
+    height:60px!important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .fitlogo, .wtlogo {
+    height: 50px;
+  }
+  #branding{
+    min-height:unset!important;
+    height:50px!important;
+  }
+}
+@media screen and (max-width: 479px) {
+  .fitlogo, .wtlogo {
+    height: 40px;
+  }
+  #branding{
+    min-height:unset!important;
+    height:40px!important;
+  }
+}

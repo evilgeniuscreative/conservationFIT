@@ -1,0 +1,126 @@
+//#inat-observations-list {
+
+  .inat-observation {
+  display:inline-block;
+    margin: 1.5rem 0;
+
+    h4 {
+      font-size:24px;
+      line-height: 1.25;
+      margin: 0 ;
+
+
+      span.taxon-name{
+        padding-left:0.25em;
+      }
+
+    }
+    span.label {
+      font-weight: 600;
+    }
+    .obs-details {
+      display:table-cell;
+      vertical-align: top;
+      padding-left: 1.5rem;
+      h5.description {
+        font-size: 16px!important;
+        line-height:1.4;
+        margin-top:0;
+        margin-bottom:0.5rem;
+      }
+      p {
+        font-size: 16px!important;
+        margin-bottom: 0.25em;
+        line-height: 1.25;
+
+        &.half{
+          float:left;
+          box-sizing:border-box;
+          &:nth-of-type(2n+1){
+         width:40%;
+          }
+          &:nth-of-type(2n){
+            width:60%;
+          }
+        }
+        &.observer {
+
+        }
+        &.date {
+
+        }
+        &.place {
+
+        }
+
+        &.obs-tags{
+
+        }
+        &.photo-details {
+
+        }
+        &.link {
+
+          &:before {
+            content: url('data:image/svg+xml;utf8,<svg height="12" width="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon fill="#CB5920" points="39.9 0.4 89.4 49.9 39.7 99.6 28.6 88.6 67.5 49.8 28.9 11.3 "/></svg>');
+            margin-right:0.25em;
+          }
+        }
+      }
+    }
+
+    $photoHeight: 150px;
+    .photo {
+      display:table-cell;
+      height: $photoHeight;
+      width:$photoHeight;
+      overflow: hidden;
+
+      figure {
+        border-radius:$photoHeight;
+        margin-top:0.3rem;
+        overflow:hidden;
+        position: relative;
+        height: $photoHeight;
+        width:$photoHeight;
+
+        .img{
+          background-size:cover;
+          height: $photoHeight;
+          width:$photoHeight;
+        }
+
+        .caption {
+
+          bottom: 0;
+          background: $captionBG;
+          color: $captionColor;
+
+          display: block;
+          font-size: 85%;
+          line-height: 1.2;
+          max-height: 13px;
+          overflow: hidden;
+          position: absolute;
+          padding: 0.25rem 1rem 0.5rem;
+          text-align: center;
+          transition: max-height $transitionTime2 ease-out;
+          z-index: 9;
+
+          &:hover {
+            max-height: $photoHeight;
+            opacity: 1;
+            transition: max-height $transitionTime ease-in;
+          }
+        }
+      }
+
+    }
+    .obs-download-images{
+
+      display:block;
+      text-align:right;
+      padding:2rem;
+    }
+  }
+//}

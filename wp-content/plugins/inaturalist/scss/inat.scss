@@ -1,0 +1,234 @@
+//colors
+$color_black_haze_80_approx: rgba(246, 246, 246, 0.8);
+$color_alto_approx: #dddddd;
+$color_bon_jour_approx: #dfdfdf;
+$color_spring_wood_approx: #f6f6f2;
+$color_mercury_approx: #e6e6e6;
+
+//@extend-elements
+//original selectors
+//.inat_place, .inat_project
+%extend_1 {
+  clear: both;
+  margin-bottom: 18px;
+  display: inline-block;
+  height: 100%;
+  min-height: 100px;
+  width: 100%;
+  border: 1px solid $color_alto_approx;
+  background-color: $color_black_haze_80_approx;
+}
+
+//original selectors
+//.inat_place .photo, .inat_project .photo
+%extend_2 {
+  display: inline;
+  float: left;
+  padding: 0 6px 3px 0;
+  max-height: 95px;
+}
+
+//original selectors
+//.inat_place.row, .inat_project.row
+%extend_3 {
+  border: 1px solid $color_bon_jour_approx;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+//original selectors
+//.inat_place.row .photo, .inat_project.row .photo
+%extend_4 {
+  display: inline;
+  float: left;
+  padding: 5px 20px 20px;
+}
+
+.inat_observation_single {
+  background-color: $color_black_haze_80_approx;
+  margin-top: 0;
+  border: 1px solid $color_alto_approx;
+  margin-bottom: 15px;
+  padding-left: 5px;
+  display: block;
+  h2 {
+    clear: both;
+  }
+  .photo_single {
+    display: inline-block;
+    margin: 15px;
+    vertical-align: top;
+    width: 300px;
+    figurecaption {
+      display: block;
+    }
+  }
+  .localitzation {
+    border-right: 1px solid $color_alto_approx;
+    display: inline-block;
+    width: 327px;
+    padding: 10px;
+    border-left: 1px solid;
+    #map {
+      width: 250px;
+      height: 281px;
+    }
+    .label {
+      font-style: italic;
+    }
+  }
+}
+
+.inat_place {
+  @extend %extend_1;
+  &.row {
+    background-color: $color_black_haze_80_approx;
+    border: 1px solid $color_bon_jour_approx;
+    display: inline-block;
+    height: 300px;
+    padding: 10px;
+    vertical-align: top;
+    width: 205px;
+    @extend %extend_3;
+    .photo {
+      padding-left: 15px;
+      @extend %extend_4;
+    }
+    h2 {
+    }
+    a {
+      padding-left: 15px;
+    }
+  }
+  .photo {
+    @extend %extend_2;
+  }
+  h2 {
+    margin-top: 5px;
+  }
+  .description {
+    margin-left: 15px;
+    padding-top: 10px;
+  }
+}
+
+.inat_project {
+  @extend %extend_1;
+  .photo {
+    @extend %extend_2;
+  }
+  h2 {
+    margin-top: 5px;
+  }
+  .description {
+    margin-left: 15px;
+    padding-top: 10px;
+  }
+  &.row {
+    @extend %extend_3;
+    .photo {
+      @extend %extend_4;
+    }
+    h2 {
+    }
+    a {
+      padding-left: 15px;
+    }
+  }
+}
+
+#taxa-wrapper {
+  margin-left: -108px;
+  width: 880px;
+}
+
+.observation_single_wrapper {
+  margin-left: -93px;
+  width: 691px;
+}
+
+header h1.entry-title {
+  display: none;
+}
+
+figure.photo {
+  float: left;
+  display: table;
+  img {
+    height: 250px;
+  }
+  figurecaption {
+    display: table-caption;
+    caption-side: bottom;
+    font-size: 40%;
+  }
+}
+
+.block-inat-obs .inat_observation {
+  height: auto;
+  > div {
+    padding-left: 0;
+  }
+  .photo {
+    padding-left: 0;
+  }
+}
+
+.inat_taxa.row {
+  background-color: $color_spring_wood_approx;
+  border: 1px solid $color_mercury_approx;
+  display: inline-block;
+  height: 350px;
+  padding: 10px;
+  vertical-align: top;
+  width: 320px;
+  .photo {
+    display: inline;
+    margin-left: 100px;
+    padding: 10px 20px 20px;
+  }
+}
+
+figure-default img {
+  max-height: 54px;
+}
+
+@import "_variables.scss";
+@import "_login-widget.scss";
+@import "_observation.scss";
+@import "_observation-photo-gallery.scss";
+@import "_gmap.scss";
+@import "_pager.scss";
+
+.type-partner {
+  .entry-content {
+    display: flex;
+  }
+  .partner-thumb {
+    flex-basis: 25%;
+  }
+  .partner-content {
+    flex-basis: 75%;
+  }
+}
+
+.error {
+  display: none;
+}
+
+.superaddmin .error {
+  background: #feffe4;
+  border: 2px solid red;
+  border-left-width: 10px;
+  margin: 0;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50%;
+  padding: 1.5rem;
+  z-index: 9999;
+  br {
+    display: none;
+  }
+}
+

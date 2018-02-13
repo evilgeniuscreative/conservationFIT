@@ -1,0 +1,57 @@
+#secondary.widget-area.sidey {
+  box-sizing: border-box;
+  padding-left: 2rem;
+
+  ul.xoxo {
+    list-style: none;
+    > li {
+      list-style: none;
+    }
+    .widget-container {
+      padding: 10px;
+      color: $text-color;
+      line-height: 1.25;
+      h3.widget-title {
+        border: none;
+        font-weight: bold;
+        span {
+          padding: 0;
+          border: none;
+        }
+      }
+
+      input {
+        width: 100%;
+      }
+
+      // SIDEBAR GALLERY
+      #gallery li {
+        margin: 0 0 0.75rem 0;
+        width: 100%;
+        transition: all $transitionTime;
+        a {
+          display: table-row;
+          img {
+            display: table-cell;
+            padding-right: 15px;
+          }
+          p {
+            display: table-cell;
+            vertical-align: middle;
+            transition: all $transitionTime;
+          }
+        }
+        &:hover {
+          margin-left: 0.5rem;
+          img {
+            //transform: rotate(22.5deg);
+
+          }
+          p {
+            color: darken($headingColor, 10);
+          }
+        }
+      }
+    }
+  }
+}

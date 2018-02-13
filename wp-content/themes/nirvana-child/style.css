@@ -1,0 +1,207 @@
+/*
+Theme Name: ConservationFIT Nirvana Child Theme
+Description: Child theme created for ConservationFIT
+Author: Ian Kleinfeld JMP
+Template: nirvana
+Version: 0.1
+*/
+#content .wp-caption-text {
+  font-size: 13px;
+  line-height: 1.2em; }
+
+#content .paragraph-list {
+  margin-bottom: 0.2em; }
+
+#content a {
+  transition: all 0.3s; }
+  #content a:hover {
+    text-decoration: underline;
+    transition: all 0.3s; }
+
+.nivo-caption h2 {
+  text-transform: none; }
+
+.nivo-caption a {
+  font-weight: 400; }
+
+#secondary.widget-area.sidey {
+  box-sizing: border-box;
+  padding-left: 2rem; }
+  #secondary.widget-area.sidey ul.xoxo {
+    list-style: none; }
+    #secondary.widget-area.sidey ul.xoxo > li {
+      list-style: none; }
+    #secondary.widget-area.sidey ul.xoxo .widget-container {
+      padding: 10px;
+      color: #555;
+      line-height: 1.25; }
+      #secondary.widget-area.sidey ul.xoxo .widget-container h3.widget-title {
+        border: none;
+        font-weight: bold; }
+        #secondary.widget-area.sidey ul.xoxo .widget-container h3.widget-title span {
+          padding: 0;
+          border: none; }
+      #secondary.widget-area.sidey ul.xoxo .widget-container input {
+        width: 100%; }
+      #secondary.widget-area.sidey ul.xoxo .widget-container #gallery li {
+        margin: 0 0 0.75rem 0;
+        width: 100%;
+        transition: all 0.4s; }
+        #secondary.widget-area.sidey ul.xoxo .widget-container #gallery li a {
+          display: table-row; }
+          #secondary.widget-area.sidey ul.xoxo .widget-container #gallery li a img {
+            display: table-cell;
+            padding-right: 15px; }
+          #secondary.widget-area.sidey ul.xoxo .widget-container #gallery li a p {
+            display: table-cell;
+            vertical-align: middle;
+            transition: all 0.4s; }
+        #secondary.widget-area.sidey ul.xoxo .widget-container #gallery li:hover {
+          margin-left: 0.5rem; }
+          #secondary.widget-area.sidey ul.xoxo .widget-container #gallery li:hover p {
+            color: #9f4619; }
+
+label {
+  display: block;
+  margin-top: 1rem;
+  color: #888;
+  font-size: 90%; }
+
+input[type="text"], input[type="password"] {
+  display: block; }
+
+button {
+  background: #CB5920;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s; }
+  button:hover {
+    background: #9f4619; }
+
+#cfit-top-login {
+  height: 15px;
+  padding: 5px 20px 0 0;
+  text-align: right; }
+  #cfit-top-login a {
+    background-color: #CB5920;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 0.8rem;
+    line-height: 1;
+    padding: 0 1rem 0.1rem 1rem;
+    text-align: center;
+    text-shadow: none !important;
+    transition: all 0.3s; }
+    #cfit-top-login a:hover {
+      background-color: #a84a1a; }
+  #cfit-top-login span {
+    padding: 0 0.5rem; }
+  @media screen and (max-width: 768px) {
+    #cfit-top-login {
+      margin-bottom: 10px; } }
+
+.fitlogo, .wtlogo {
+  display: inline-block; }
+  .fitlogo img, .wtlogo img {
+    height: 100%;
+    width: auto; }
+
+.wtlogo {
+  float: right; }
+
+@media screen and (min-width: 769px) {
+  .fitlogo, .wtlogo {
+    height: 100px; }
+  #branding {
+    min-height: 100px; } }
+
+@media screen and (max-width: 768px) {
+  .fitlogo, .wtlogo {
+    height: 70px; }
+  #branding {
+    min-height: unset !important;
+    height: 70px !important; } }
+
+@media screen and (max-width: 600px) {
+  .fitlogo, .wtlogo {
+    height: 60px; }
+  #branding {
+    min-height: unset !important;
+    height: 60px !important; } }
+
+@media screen and (max-width: 480px) {
+  .fitlogo, .wtlogo {
+    height: 50px; }
+  #branding {
+    min-height: unset !important;
+    height: 50px !important; } }
+
+@media screen and (max-width: 479px) {
+  .fitlogo, .wtlogo {
+    height: 40px; }
+  #branding {
+    min-height: unset !important;
+    height: 40px !important; } }
+
+#wpadminbar {
+  background-color: #3a3b3d;
+  color: #fff; }
+  #wpadminbar .ab-item:before, #wpadminbar .ab-icon:before {
+    color: #fff;
+    text-shadow: none !important; }
+
+#wp-admin-bar-wp-logo {
+  display: none; }
+
+#wpadminbar .ab-top-menu > li.hover > .ab-item,
+#wpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus,
+#wpadminbar:not(.mobile) .ab-top-menu > li:hover > .ab-item,
+#wpadminbar:not(.mobile) .ab-top-menu > li > .ab-item:focus {
+  color: #fff; }
+  #wpadminbar .ab-top-menu > li.hover > .ab-item:before,
+  #wpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus:before,
+  #wpadminbar:not(.mobile) .ab-top-menu > li:hover > .ab-item:before,
+  #wpadminbar:not(.mobile) .ab-top-menu > li > .ab-item:focus:before {
+    color: #fff; }
+  #wpadminbar .ab-top-menu > li.hover > .ab-item .ab-icon, #wpadminbar .ab-top-menu > li.hover > .ab-item span.ab-label,
+  #wpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus .ab-icon,
+  #wpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus span.ab-label,
+  #wpadminbar:not(.mobile) .ab-top-menu > li:hover > .ab-item .ab-icon,
+  #wpadminbar:not(.mobile) .ab-top-menu > li:hover > .ab-item span.ab-label,
+  #wpadminbar:not(.mobile) .ab-top-menu > li > .ab-item:focus .ab-icon,
+  #wpadminbar:not(.mobile) .ab-top-menu > li > .ab-item:focus span.ab-label {
+    color: #fff; }
+    #wpadminbar .ab-top-menu > li.hover > .ab-item .ab-icon:before, #wpadminbar .ab-top-menu > li.hover > .ab-item span.ab-label:before,
+    #wpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus .ab-icon:before,
+    #wpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus span.ab-label:before,
+    #wpadminbar:not(.mobile) .ab-top-menu > li:hover > .ab-item .ab-icon:before,
+    #wpadminbar:not(.mobile) .ab-top-menu > li:hover > .ab-item span.ab-label:before,
+    #wpadminbar:not(.mobile) .ab-top-menu > li > .ab-item:focus .ab-icon:before,
+    #wpadminbar:not(.mobile) .ab-top-menu > li > .ab-item:focus span.ab-label:before {
+      color: #fff; }
+
+#wpadminbar:not(.mobile) > #wp-toolbar a:focus span.ab-label,
+#wpadminbar:not(.mobile) > #wp-toolbar li:hover span.ab-label,
+#wpadminbar > #wp-toolbar li.hover span.ab-label {
+  color: #fff; }
+
+.presentation-page #pp-texttop {
+  padding: 0 0 75px 0; }
+
+.presentation-page #content {
+  padding: 20px 0 0 0; }
+
+.presentation-page #secondary {
+  padding: 20px 0 0 4rem; }
+
+.textwidget img {
+  padding-right: 10px; }
+
+.ians-messages {
+  display: none; }

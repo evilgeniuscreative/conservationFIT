@@ -1,0 +1,25 @@
+label {
+  display: block;
+  margin-top:1rem;
+  color:#888;
+  font-size:90%;
+}
+input[type="text"],input[type="password"] {
+  display: block;
+
+}
+button{
+  background:$headingColor;
+  border:none;
+  border-radius:$border-radius;
+  cursor:pointer;
+  color:white;
+  font-weight:bold;
+  font-size:1rem;
+  margin-top:1rem;
+  padding:0.5rem 1rem;
+  transition:all $transitionTime;
+  &:hover{
+   background: darken($headingColor,10);
+  }
+}

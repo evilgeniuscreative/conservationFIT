@@ -1,0 +1,34 @@
+.child-page-item {
+    clear:both;
+    width: auto;
+    margin-bottom: 1.5rem;
+}
+
+.child-page-item h2 {
+    line-height:1;
+}
+
+.child-page-item figure {
+    float: left;
+    margin:0 1.5rem 1.5rem 0;
+}
+
+.child-page-item figure a {
+    border-radius:75px;
+    display:inline-block;
+    height: 140px;
+    width: 140px;
+    overflow:hidden;
+}
+.child-page-item figure a img {
+    height: 150px;
+    width: auto;
+    max-width:none!important;
+}
+
+.child-page-item .child-page-content {
+
+}
+
+.child-page-item .more-link {
+}

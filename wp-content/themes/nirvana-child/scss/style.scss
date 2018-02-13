@@ -1,0 +1,38 @@
+/*
+Theme Name: ConservationFIT Nirvana Child Theme
+Description: Child theme created for ConservationFIT
+Author: Ian Kleinfeld JMP
+Template: nirvana
+Version: 0.1
+*/
+//@import url("../nirvana/style.css");
+//colors
+$black:  black;
+
+@import "variables";
+@import "nirv-variables";
+@import "nirv-content";
+@import "nivo-slider";
+@import "nirv-gallery";
+@import "nirv-sidebar";
+@import "nirv-forms";
+@import "cfit-top-login";
+@import "header";
+@import "wp-admin-customizations";
+@import "frontpage";
+
+.textwidget img {
+  padding-right: 10px;
+}
+.ians-messages{
+ display:none;
+}
+//.superadmin .ians-messages{
+//  display:block;
+//  position:absolute;
+//  top:30px;
+//  left:10px;
+//  background:lightgoldenrodyellow;
+//  padding:10px;
+//  z-index:900;
+//}
